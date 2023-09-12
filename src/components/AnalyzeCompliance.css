@@ -1,0 +1,13 @@
+.analyze-compliance-container {
+  position: fixed;
+  left: 50%;
+  bottom: 2vw;
+  transform: translateX(-50%);
+  z-index: 3; /* Adjust this value as needed to ensure the button appears above other elements */
+}
+
+.analyze-compliance-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}

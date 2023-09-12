@@ -2,11 +2,18 @@ import React, { useState, useEffect } from "react";
 import "./emailform.css";
 import logo from "../assets/logo.png";
 import AnalyzeCompliance from "./AnalyzeCompliace";
+import Popup from "./Popup";
 
 const EmailForm: React.FC = () => {
   const [text, setText] = useState("");
   const [placeholder, setPlaceholder] = useState("");
   const [isEmpty, setIsEmpty] = useState(true);
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleTokenSubmit = (token: string) => {
+    // Do something with the token, e.g., set up API calls
+    localStorage.setItem("token", token);
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setIsEmpty(e.target.value === "");
@@ -34,6 +41,12 @@ const EmailForm: React.FC = () => {
 
   return (
     <div className="container">
+      {showPopup && (
+        <Popup
+          onClose={() => setShowPopup(false)}
+          onTokenSubmit={handleTokenSubmit}
+        />
+      )}
       <img className="logo-background" src={logo} />
       <textarea
         placeholder={placeholder}

@@ -1,6 +1,7 @@
 ![](/src/assets/logo.png)
 
-Example of a terrible email to use: 😿
+
+<h1> Example Of A Terrible Email To Use: 😿 </h1>
 
 Subject: [URGENT] Company Financial Reports and Employee Salaries
 

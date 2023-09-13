@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import "./emailform.css";
 import logo from "../assets/logo.png";
 import AnalyzeCompliance from "./AnalyzeCompliace";
@@ -8,7 +8,6 @@ import { ThreeCircles } from "react-loader-spinner";
 const EmailForm: React.FC = () => {
   const [text, setText] = useState("");
   const [placeholder, setPlaceholder] = useState("");
-  const [isEmpty, setIsEmpty] = useState(true);
   const [showPopup, setShowPopup] = useState(true);
   const [showLoading, setShowLoading] = useState(false);
   const handleClick = () => {
@@ -174,7 +173,6 @@ ICMCI, as an Operator, will be responsible for compliance with the Data Protecti
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setIsEmpty(e.target.value === "");
     setText(e.target.value);
   };
 

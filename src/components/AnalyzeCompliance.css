@@ -3,7 +3,7 @@
   left: 50%;
   bottom: 2vw;
   transform: translateX(-50%);
-  z-index: 3; /* Adjust this value as needed to ensure the button appears above other elements */
+  z-index: 1;
 }
 
 .analyze-compliance-button {

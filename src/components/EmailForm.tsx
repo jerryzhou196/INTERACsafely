@@ -54,7 +54,7 @@ const EmailForm: React.FC = () => {
         onChange={handleChange}
         className="giant-textarea"
       />
-      <AnalyzeCompliance isEmpty={isEmpty} />
+      <AnalyzeCompliance prompt={text} />
     </div>
   );
 };

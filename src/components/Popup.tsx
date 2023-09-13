@@ -27,6 +27,7 @@ const Popup: React.FC<PopupProps> = ({ onClose, onTokenSubmit }) => {
           X
         </button>
         <h3>Enter API Token</h3>
+        <p>(Ask Jerry for one)</p>
         <input
           placeholder="API Token"
           value={token}

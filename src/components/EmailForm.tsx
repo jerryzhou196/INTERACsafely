@@ -3,7 +3,7 @@ import "./emailform.css";
 import logo from "../assets/logo.png";
 import AnalyzeCompliance from "./AnalyzeCompliace";
 import Popup from "./Popup";
-import { ColorRing } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 
 const EmailForm: React.FC = () => {
   const [text, setText] = useState("");
@@ -215,14 +215,17 @@ ICMCI, as an Operator, will be responsible for compliance with the Data Protecti
 
       {showLoading && (
         <div className="loading">
-          <ColorRing
-            visible={true}
-            height="300"
-            width="300"
-            ariaLabel="blocks-loading"
+          <ThreeCircles
+            height="100"
+            width="100"
+            color="#4fa94d"
             wrapperStyle={{}}
-            wrapperClass="blocks-wrapper"
-            colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+            wrapperClass=""
+            visible={true}
+            ariaLabel="three-circles-rotating"
+            outerCircleColor=""
+            innerCircleColor=""
+            middleCircleColor=""
           />
         </div>
       )}

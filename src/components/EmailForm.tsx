@@ -47,7 +47,7 @@ const EmailForm: React.FC = () => {
           onTokenSubmit={handleTokenSubmit}
         />
       )}
-      <img className="logo-background" src={logo} />
+      <img className="logo-background" src={logo} alt="logo" />
       <textarea
         placeholder={placeholder}
         value={text}
